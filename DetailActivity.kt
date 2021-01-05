@@ -40,5 +40,8 @@ class DetailActivity : AppCompatActivity() {
         GlideApp.with(this)
                 .load(targetPath + "_6.jpg")
                 .into(img4)
+                //.error(R.drawable.ci) // 에러시 띄울 리소스
+                //.override(208, 208)   // 크기 조정
+                //.fitCenter()          // 가운데 정렬
     }
 }
